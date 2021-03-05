@@ -1,0 +1,22 @@
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  transition: fill 250ms linear;
+
+  &:hover,
+  &:focus {
+    fill: var(--main-dark-font);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

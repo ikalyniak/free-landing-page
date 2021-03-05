@@ -1,0 +1,31 @@
+.header {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  border-bottom: 1px solid var(--main-gray-font);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 700;
+  color: var(--main-gray-font);
+
+  &--current {
+    color: var(--main-dark-font);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--main-dark-font);
+  }
+
+  transition: color 250ms linear;
+}

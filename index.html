@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing Page</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/main.min.css" />
+    </head>
+    <body>
+        <header class="header container">
+            <nav class="navigation">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a class="nav__link nav__link--current" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Hero -->
+        <section class="section hero">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="wrapper__box">
+                        <h1 class="hero-title">Denis Novik</h1>
+                        <p class="section-description">UX | UI designer <br> 24 years old, Minsk</p>
+                        <div class="lang">
+                            <ul class="lang__box">
+                                <li class="lang__item">
+                                    <a class="lang__link" href="#">RU</a>
+                                </li>
+                                <li class="lang__item">
+                                    <a class="lang__link lang__link--current" href="#">ENG</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="burger" type="button">
+                            <svg class="burger__icon" width="33" height="20">
+                                <use href="./img/svg/symbol-defs.svg#burger"></use>
+                            </svg>
+                    </button>                        
+                </div>
+                <picture>
+                    <source 
+                    srcset="./img/hero/hero.jpg 1x, ./img/hero/hero@2x.jpg 2x" media="(min-width: 768px)"
+                    >
+                    <source 
+                    srcset="./img/hero/hero-mobile.jpg 1x, ./img/hero/hero-mobile@2x.jpg 2x" media="(min-width: 320px)"
+                    >
+                    <img src="./img/hero/hero-min.jpg" alt="hero" />
+                </picture> 
+            </div>
+        </section>
+        <!-- About Me -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title">About me</h2>
+                <p>
+                    Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in
+                    design and everything connected with it.
+                </p>
+                <p>
+                    I'm studying at courses "Web and mobile design interfaces"
+                    in IT-Academy.
+                </p>
+                <p>
+                    Ready to implement excellent projects with wonderful people.
+                </p>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <p>I work in such programs as</p>
+
+                <ul>
+                    <li>
+                        <svg>
+                            <use href="./img/svg/symbol-defs.svg#icon-ps" />
+                        </svg>
+                        <p>Adobe Photoshop</p>
+                        <ul>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="./img/svg/symbol-defs.svg#icon-ai" />
+                        </svg>
+                        <p>Adobe Photoshop</p>
+                        <ul>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="./img/svg/symbol-defs.svg#icon-ae" />
+                        </svg>
+                        <p>Adobe Photoshop</p>
+                        <ul>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="./img/svg/symbol-defs.svg#icon-figma" />
+                        </svg>
+                        <p>Adobe Photoshop</p>
+                        <ul>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                            <li>
+                                <svg>
+                                    <use
+                                        href="./img/svg/symbol-defs.svg#icon-star"
+                                    />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section class="section" id="portfolio">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img
+                            src="./img/portfolio/portfolio-1-min.jpg"
+                            alt="project"
+                        /><a href="#">Online fashion store - Homepage</a>
+                    </li>
+                    <li>
+                        <img
+                            src="./img/portfolio/portfolio-2-min.jpg"
+                            alt="project"
+                        /><a href="#">Reebok Store - Concept</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="section" id="contacts">
+            <div class="container">
+                <h2 class="section-title">Contacts</h2>
+                <p>Want to know more or just chat? You are welcome!</p>
+                <button type="button">Send message</button>
+                <ul>
+                    <li>
+                        <svg>
+                            <use
+                                href="./img/svg/symbol-defs.svg#icon-link-in"
+                            />
+                        </svg>
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="./img/svg/symbol-defs.svg#icon-insta" />
+                        </svg>
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="./img/svg/symbol-defs.svg#icon-be" />
+                        </svg>
+                    </li>
+                    <li>
+                        <svg>
+                            <use href="./img/svg/symbol-defs.svg#icon-ball" />
+                        </svg>
+                    </li>
+                </ul>
+                <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+            </div>
+        </footer>
+        <!-- Mobile Menu -->
+        <div>
+            <button type="button">
+                <svg>
+                    <use href="./img/svg/symbol-defs.svg#icon-close" />
+                </svg>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">About Me</a></li>
+                    <li class="nav-item"><a href="#">Skills</a></li>
+                    <li class="nav-item"><a href="#">Portfolio</a></li>
+                    <li class="nav-item"><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <p>RU | ENG</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+.lang__box {
+  display: flex;
+  transform: rotate(-90deg);
+}
+
+.lang__item {
+  padding-right: 5px;
+  padding-left: 5px;
+
+  &:first-child {
+    border-right: 1px solid var(--main-dark-font);
+  }
+}
+
+.lang__link {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-gray-font);
+
+  &--current {
+    color: var(--main-dark-font);
+  }
+}
