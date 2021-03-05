@@ -1,0 +1,26 @@
+.about {
+  background-color: var(--main-bg-accent);
+
+  .section-title {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about-box {
+  margin-right: auto;
+  margin-left: auto;
+  width: 316px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
+}
+
+.about-box__desc + .about-box__desc {
+  margin-top: 30px;
+}
