@@ -7,6 +7,7 @@
   --main-dark-font: #070707;
   --main-gray-font: #828282;
   --main-light-font: #ffffff;
+  --stars: #e5e5e5;
 }
 
 html {
@@ -280,6 +281,94 @@ p {
   margin-top: 30px;
 }
 
+.skills .section-title {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills {
+    margin-bottom: 70px;
+  }
+}
+
+.skills__desc {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .skills__desc {
+    margin-bottom: 84px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.skills__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .skills__item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills__item {
+    width: 168px;
+  }
+}
+
+.skills__icon {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 24px;
+}
+
+.skills__title {
+  width: 90px;
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.214;
+  text-align: center;
+  color: var(--main-gray-font);
+}
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stars__icon {
+  width: 26px;
+  height: 26px;
+  fill: var(--stars);
+}
+
+.stars__icon--current {
+  fill: var(--main-dark-font);
+}
+
 .burger {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,12 +384,6 @@ p {
   padding: 0;
   border: none;
   background-color: transparent;
-  -webkit-transition: fill 250ms linear;
-  transition: fill 250ms linear;
-}
-
-.burger:hover, .burger:focus {
-  fill: var(--main-dark-font);
 }
 
 @media screen and (min-width: 768px) {
