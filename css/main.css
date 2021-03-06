@@ -369,6 +369,47 @@ p {
   fill: var(--main-dark-font);
 }
 
+.portfolio {
+  background-color: var(--main-bg-accent);
+}
+
+.portfolio .section-title {
+  margin-bottom: 65px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio .section-title {
+    margin-bottom: 47px;
+  }
+}
+
+.portfolio__item:not(:last-child) {
+  margin-bottom: 78px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 100px;
+  }
+}
+
+.portfolio__picture {
+  margin-bottom: 33px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__picture {
+    margin-bottom: 45px;
+  }
+}
+
+.portfolio__link {
+  color: var(--main-dark-font);
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .burger {
   display: -webkit-box;
   display: -ms-flexbox;
