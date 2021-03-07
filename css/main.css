@@ -803,10 +803,12 @@ p {
 }
 
 .mob-menu .lang__box {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transform-origin: left bottom;
-          transform-origin: left bottom;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
 }
 
 .mob-menu.is-open {
@@ -828,8 +830,8 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 65px 26px 26px;
   background-color: var(--main-bg-light);
 }
@@ -882,15 +884,20 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
 }
 
 .mob-menu__link {
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.235;
   color: var(--main-gray-font);
 }
 
 .mob-menu__link--current {
   color: var(--main-dark-font);
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 8px;
 }
 /*# sourceMappingURL=main.css.map */
