@@ -13,11 +13,11 @@
 .about-box {
   margin-right: auto;
   margin-left: auto;
-  width: 316px;
+  max-width: 316px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    width: 500px;
+    max-width: 500px;
   }
 }
 
