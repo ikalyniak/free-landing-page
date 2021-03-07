@@ -28,7 +28,7 @@ $toggle-anim-speed: 0.9s;
     transform: translateY(4px);
   }
 
-  &:focus,
+  &:focus .line:after,
   &:hover .line:after {
     background-color: $toggle-line-focus-color;
   }

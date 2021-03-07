@@ -174,7 +174,7 @@ p {
           transform: translateY(4px);
 }
 
-.btn-toggle:focus,
+.btn-toggle:focus .line:after,
 .btn-toggle:hover .line:after {
   background-color: #070707;
 }
