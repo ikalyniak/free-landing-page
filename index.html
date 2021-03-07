@@ -45,7 +45,6 @@
                     <div class="wrapper__box">
                         <h1 class="hero-title">Denis Novik</h1>
                         <p class="section-description">UX | UI designer <br> 24 years old, Minsk</p>
-                        <div class="lang">
                             <ul class="lang__box">
                                 <li class="lang__item">
                                     <a class="lang__link" href="#">RU</a>
@@ -54,13 +53,18 @@
                                     <a class="lang__link lang__link--current" href="#">ENG</a>
                                 </li>
                             </ul>
-                        </div>
                     </div>
-                    <button class="burger" type="button">
-                            <svg class="burger__icon" width="33" height="20">
-                                <use href="./img/svg/symbol-defs.svg#burger"></use>
+                    <!-- <button class="mob-menu__button" type="button" data-menu-button>
+                            <svg width="33" height="20" aria-label="mobile-menu button">
+                                <use class="mob-menu__icon-open" href="./img/svg/symbol-defs.svg#burger"></use>
+                                <use class="mob-menu__icon-close" href="./img/svg/symbol-defs.svg#icon-close" />
                             </svg>
-                    </button>                        
+                    </button> -->
+                    <button class="btn-toggle" id="menu-toggle" data-menu-button>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </button>
                 </div>
                 <picture>
                     <source 
@@ -317,26 +321,42 @@
             </div>
         </footer>
         <!-- Mobile Menu -->
-        <div class="visually-hidden">
-            <button type="button">
-                <svg>
-                    <use href="./img/svg/symbol-defs.svg#icon-close" />
-                </svg>
-            </button>
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">About Me</a></li>
-                    <li class="nav-item"><a href="#">Skills</a></li>
-                    <li class="nav-item"><a href="#">Portfolio</a></li>
-                    <li class="nav-item"><a href="#">Contacts</a></li>
+        <div class="mob-menu" data-menu>
+            <nav class="mob-menu__nav">
+                <ul class="mob-menu__list">
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link mob-menu__link--current" href="./index.html">Home</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="./index.html#about">About Me</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="./index.html#skills">Skills</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="./index.html# portfolio">Portfolio</a>
+                    </li>
+                    <li class="mob-menu__item">
+                        <a class="mob-menu__link" href="./index.html#contacts">Contacts</a>
+                    </li>
+                </ul>
+                <ul class="lang__box">
+                    <li class="lang__item">
+                        <a class="lang__link" href="#">RU</a>
+                    </li>
+                    <li class="lang__item">
+                        <a class="lang__link lang__link--current" href="#">ENG</a>
+                    </li>
                 </ul>
             </nav>
-            <p>RU | ENG</p>
+            
         </div>
     </body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/flip-btn.js"></script>
 </html>

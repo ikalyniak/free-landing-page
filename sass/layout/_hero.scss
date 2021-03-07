@@ -6,16 +6,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    .lang {
-      display: none;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .lang {
-      display: block;
-    }
-    .burger {
+    .lang__box {
       display: none;
     }
   }
